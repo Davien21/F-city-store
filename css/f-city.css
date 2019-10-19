@@ -1,0 +1,102 @@
+#today-deals-product img {
+	max-width: 160px;
+	min-height: 180px;
+}
+.vector-circle {
+	 border-radius: 50% !important;
+	 height: 100px;
+	 max-width: 150px;
+	 cursor: pointer;
+}
+.vector-circle img{
+	max-width: 80%;
+  	height: 55px;
+}
+.vector-tag-name {
+	left: 22px;
+	bottom: 15px;
+	font-weight: bold;
+}
+main section:nth-child(2) div div:nth-child(1) p span span{
+  	font-size: 1.4em;
+  	font-weight: bold;
+  	top: 8px;
+  	letter-spacing: 1px;
+  	left: -4px;
+}
+#tag-img{
+	max-height: 35px;
+	max-width: 30px;  
+  	top: 5px;
+  	left: -28px;
+}
+section#products img {
+	max-height: 250px;
+}
+#vectors hr{
+	width: 100%;
+	border: 1px solid #dee2e6;
+	top: 52%;
+	left: 0;
+}
+div.orange45deg {
+ 	width: 0; 
+	height: 0; 
+	right: 0;
+	border-top: 50px solid #ffcc00;
+	border-bottom: 50px solid transparent;
+	border-left: 50px solid transparent;
+}
+div.green45deg {
+ 	width: 0; 
+	height: 0; 
+	right: 0;
+	border-top: 50px solid #27C86C;
+	border-bottom: 50px solid transparent;
+	border-left: 50px solid transparent;
+}
+.deg45span {
+	font-weight: bold;
+ 	top: -35px;
+	width: 40px;
+	right: 0px;
+	text-align: center;
+	font-size: 10px;
+	transform: rotate(45deg);
+	display:block;
+}
+ul,ol {
+	list-style: none;
+	font-weight: 600;
+}
+div#nav2 {
+	border-bottom-color: black !important;
+}
+input {
+	border-top-right-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+.nav-hr {
+	height: 2px;
+	background-color: black !important;
+}
+.col-sm-6:last-child img{
+	padding-bottom: 20px;
+}
+section:nth-child(3) hr {
+	width: 86%;
+}
+a {
+	color: black;
+}
+a:hover {
+	transition: color 0.15s ease-in-out,;
+	color: orange;
+}
+li:last-child a {
+	color: white;
+}
+li:last-child:hover {
+	transition: background-color 0.15s ease-in-out;
+	background-color: orange;
+}
