@@ -398,6 +398,9 @@ div.fullHeight {
 .h-90 {
 	height: 90% !important;
 }
+.h-95 {
+	height: 95% !important;
+}
 .w-15 {
 	width: 15% !important;
 }

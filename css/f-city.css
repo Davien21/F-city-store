@@ -1,6 +1,10 @@
+#bannerSlider img{
+	min-height: 180px !important;
+	max-height: 300px !important;
+}
 #today-deals-product img {
 	max-width: 160px;
-	min-height: 180px;
+	max-height: 180px;
 }
 .vector-circle {
 	 border-radius: 50% !important;
@@ -44,7 +48,6 @@ div.orange45deg {
 	height: 0; 
 	right: 0;
 	border-top: 50px solid #ffcc00;
-	border-bottom: 50px solid transparent;
 	border-left: 50px solid transparent;
 }
 div.green45deg {
@@ -52,7 +55,6 @@ div.green45deg {
 	height: 0; 
 	right: 0;
 	border-top: 50px solid #27C86C;
-	border-bottom: 50px solid transparent;
 	border-left: 50px solid transparent;
 }
 .deg45span {
