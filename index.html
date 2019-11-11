@@ -12,24 +12,53 @@
 		<script src="./js/bootstrap.js"></script>
 	</head>
 	<body>
+		 
+			<div id="Check-Out-modal" class="custom-modal ">
+			  <div class="custom-modal-dialog ">
+			    <div class="custom-modal-content rounded text-center">
+			      <header class=" ">
+			        <h2 class="flex text-red-alt w-100 p-1">
+			        	<span class="mx-auto pl-4">Your Cart:</span>
+			        	<a href="#" class="closebtn pr-2">×</a></h2>
+			      </header>
+			      <div class="px-2 pt-2 ">
+			      	<ul class="list-group cart-list rounded">
+			      		<li class="empty-cart-alert pb-3">Your Shopping Cart is Empty!</li>
+			      	</ul>
+			      </div>
+			      <footer class="px-2 pb-3">
+			        <button class="btn-block card-box py-2 border-0 rounded-bottom modal-buy-btn">Buy Now</button>
+			      </footer>
+			    </div>
+			  </div>
+			</div>
+		 
+	
 		<nav >
 			<div class="container-fluid bg-ash" id="nav-1">
 				<div class="container">
 					<div class="row justify-content-sm-between ">
-						<div class="col-md-5 ">
+						<div class="col-md-3 ">
 							<div class="row smaller-text pt-2 text-center text-md-left flex-wrap">
-								<span class="col px-0">
+								<span class="col-5 px-0">
 									<i class="fas fa-phone-alt"></i>
-									<span >08068284913,08188155501</span>
+									<span >08068284913</span>
 								</span>
-								<span class="col px-lg-0 ml-lg-1">
-									<i class="fa fa-envelope "></i>
+								<span class="col-7 px-lg-0 pl-lg-1">
+									<i class="fa fa-envelope d-none d-sm-inline-flex"></i>
 									<span >contact@abafashion.ng</span>
 								</span>
 							</div>
 						</div>
+						<div class="col-md-2 ">
+							<div class="bigger-text pt-2 text-center">
+								<a class="check-out-btn btn-outline-red p-2 p-md-3" href="#Check-Out-modal">
+									Check-Out
+								</a>
+							</div>
+						</div>
 						<div class="col-md-6 smaller-text ">
-							<ul class="row justify-content-sm-between ">
+							<ul class="row justify-content-sm-between links-ul">
 								<li class="pt-2 ">
 									<a href="#">Customize Design</a></li>
 								<li class="pt-2 px-2 px-sm-0">
@@ -76,9 +105,11 @@
 						<div class="my-auto">
 							<i class="fas fa-shopping-cart text-orange"></i>
 							<span>
-								Cart <span class="text-danger">(0)</span>
+								Cart <span class="cart-size material-box">0</span>
 							</span>
-							<i class="fas fa-caret-down"></i>
+							<a href="#Check-Out-modal" class="check-out-btn">
+								<i class="fas fa-caret-down"></i>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -283,11 +314,11 @@
 								</div>
 								<div class="row flex-column">
 									<div>
-										<span class="text-orange font-weight-bold med-text-1">N14,700</span>
-										<span class="s-thru smaller-text">N15,000</span>
+										<span class="price-span text-orange font-weight-bold med-text-1">N3,500</span>
+										<span class="s-thru smaller-text">N7,000</span>
 									</div>
-									<p class="my-1">
-										Rf Clothings Aztec Shirt No5
+									<p class="my-1 item-name">
+										Dark Smile Designer Shirt
 									</p>
 									<div class="flex-column">
 											<span class="d-block little-text">			
@@ -299,15 +330,15 @@
 											</span>
 										</span>
 									</div>
-									<button class="btn btn-outline-secondary my-2 mx-auto  smaller-text">
+									<button class="btn add-to-cart btn-outline-secondary my-2 mx-auto  smaller-text">
 										<i class="fas fa-shopping-cart d-md-none d-lg-inline-flex"></i>
-										<span>Make This For me</span>
+										<span class="">Add to Cart</span>
 									</button>
 								</div>
 								<div class="row mt-1 flex-wrap">
 										<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fas fa-plus-square"></i>
-										Add to Favourite
+										Like this item
 									</button>
 									<button class="col-12 col-lg-6  btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fa fa-globe" ></i>
@@ -328,11 +359,11 @@
 								</div>
 								<div class="row flex-column">
 									<div>
-										<span class="text-orange font-weight-bold med-text-1">N14,700</span>
-										<span class="s-thru smaller-text">N15,000</span>
+										<span class="price-span text-orange font-weight-bold med-text-1">N2,700</span>
+										<span class="s-thru smaller-text">N7,000</span>
 									</div>
-									<p class="my-1">
-										Rf Clothings Aztec Shirt No5
+									<p class="my-1 item-name">
+										MarshMellow in Black
 									</p>
 									<div class="flex-column">
 											<span class="d-block little-text">			
@@ -344,15 +375,15 @@
 											</span>
 										</span>
 									</div>
-									<button class="row btn btn-outline-secondary my-2  mx-auto smaller-text">
+									<button class="row add-to-cart btn btn-outline-secondary my-2  mx-auto smaller-text">
 										<i class="fas fa-shopping-cart d-md-none d-lg-inline-flex "></i>
-										<span>Make This For me</span>
+										<span class="">Add to Cart</span>
 									</button>
 								</div>
 								<div class="row mt-1">
 										<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fas fa-plus-square"></i>
-										Add to Favourite
+										Like this item
 									</button>
 									<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fa fa-globe" ></i>
@@ -373,11 +404,11 @@
 								</div>
 								<div class="row flex-column">
 									<div>
-										<span class="text-orange font-weight-bold med-text-1">N14,700</span>
-										<span class="s-thru smaller-text">N15,000</span>
+										<span class="price-span text-orange font-weight-bold med-text-1">N4,500</span>
+										<span class="s-thru smaller-text">N7,000</span>
 									</div>
-									<p class="my-1">
-										Rf Clothings Aztec Shirt No5
+									<p class="my-1 item-name">
+										Palm Trees and the Horizon
 									</p>
 									<div class="flex-column">
 											<span class="d-block little-text">			
@@ -389,15 +420,15 @@
 											</span>
 										</span>
 									</div>
-									<button class="btn btn-outline-secondary my-2  mx-auto smaller-text">
+									<button class="btn add-to-cart btn-outline-secondary my-2  mx-auto smaller-text">
 										<i class="fas fa-shopping-cart d-md-none d-lg-inline-flex"></i>
-										<span>Make This For me</span>
+										<span class="">Add to Cart</span>
 									</button>
 								</div>
 								<div class="row mt-1">
 										<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fas fa-plus-square"></i>
-										Add to Favourite
+										Like this item
 									</button>
 									<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fa fa-globe" ></i>
@@ -417,11 +448,11 @@
 								</div>
 								<div class="row flex-column">
 									<div>
-										<span class="text-orange font-weight-bold med-text-1">N14,700</span>
-										<span class="s-thru smaller-text">N15,000</span>
+										<span class="price-span text-orange font-weight-bold med-text-1">N1,350</span>
+										<span class="s-thru smaller-text">N7,000</span>
 									</div>
-									<p class="my-1">
-										Rf Clothings Aztec Shirt No5
+									<p class="my-1 item-name">
+										Blue Tint Designer Shirt
 									</p>
 									<div class="flex-column">
 											<span class="d-block little-text">			Product ID: 2016100001
@@ -431,15 +462,15 @@
 											</span>
 										</span>
 									</div>
-									<button class="btn btn-outline-secondary my-2 w-10 mx-auto smaller-text">
+									<button class="btn add-to-cart btn-outline-secondary my-2 w-10 mx-auto smaller-text">
 										<i class="fas fa-shopping-cart d-md-none d-lg-inline-flex"></i>
-										<span>Make This For me</span>
+										<span class="">Add to Cart</span>
 									</button>
 								</div>
 								<div class="row mt-1">
 										<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fas fa-plus-square"></i>
-										Add to Favourite
+										Like this item
 									</button>
 									<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fa fa-globe" ></i>
@@ -470,11 +501,11 @@
 								</div>
 								<div class="row flex-column">
 									<div>
-										<span class="text-orange font-weight-bold med-text-1">N14,700</span>
-										<span class="s-thru smaller-text">N15,000</span>
+										<span class="price-span text-orange font-weight-bold med-text-1">N6,000</span>
+										<span class="s-thru smaller-text">N7,000</span>
 									</div>
-									<p class="my-1">
-										Rf Clothings Aztec Shirt No5
+									<p class="my-1 item-name">
+										Louis Vuitton Ecstasy 
 									</p>
 									<div class="flex-column">
 											<span class="d-block little-text">			
@@ -486,15 +517,15 @@
 											</span>
 										</span>
 									</div>
-									<button class="btn btn-outline-secondary my-2 mx-auto  smaller-text">
+									<button class="btn add-to-cart btn-outline-secondary my-2 mx-auto  smaller-text">
 										<i class="fas fa-shopping-cart d-md-none d-lg-inline-flex"></i>
-										<span>Make This For me</span>
+										<span class="">Add to Cart</span>
 									</button>
 								</div>
 								<div class="row mt-1 flex-wrap">
 										<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fas fa-plus-square"></i>
-										Add to Favourite
+										Like this item
 									</button>
 									<button class="col-12 col-lg-6  btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fa fa-globe" ></i>
@@ -515,11 +546,11 @@
 								</div>
 								<div class="row flex-column">
 									<div>
-										<span class="text-orange font-weight-bold med-text-1">N14,700</span>
-										<span class="s-thru smaller-text">N15,000</span>
+										<span class="price-span text-orange font-weight-bold med-text-1">N2,000</span>
+										<span class="s-thru smaller-text">N7,000</span>
 									</div>
-									<p class="my-1">
-										Rf Clothings Aztec Shirt No5
+									<p class="my-1 item-name">
+										Stripped Yellow Shirt 
 									</p>
 									<div class="flex-column">
 											<span class="d-block little-text">			
@@ -531,15 +562,15 @@
 											</span>
 										</span>
 									</div>
-									<button class="row btn btn-outline-secondary my-2  mx-auto smaller-text">
+									<button class="row add-to-cart btn btn-outline-secondary my-2  mx-auto smaller-text">
 										<i class="fas fa-shopping-cart d-md-none d-lg-inline-flex "></i>
-										<span>Make This For me</span>
+										<span class="">Add to Cart</span>
 									</button>
 								</div>
 								<div class="row mt-1">
 										<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fas fa-plus-square"></i>
-										Add to Favourite
+										Like this item
 									</button>
 									<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fa fa-globe" ></i>
@@ -559,11 +590,11 @@
 								</div>
 								<div class="row flex-column">
 									<div>
-										<span class="text-orange font-weight-bold med-text-1">N14,700</span>
-										<span class="s-thru smaller-text">N15,000</span>
+										<span class="price-span text-orange font-weight-bold med-text-1">N1,900</span>
+										<span class="s-thru smaller-text">N7,000</span>
 									</div>
-									<p class="my-1">
-										Rf Clothings Aztec Shirt No5
+									<p class="my-1 item-name">
+										Focus Designer Shirt
 									</p>
 									<div class="flex-column">
 											<span class="d-block little-text">			
@@ -575,15 +606,15 @@
 											</span>
 										</span>
 									</div>
-									<button class="btn btn-outline-secondary my-2  mx-auto smaller-text">
+									<button class="btn add-to-cart btn-outline-secondary my-2  mx-auto smaller-text">
 										<i class="fas fa-shopping-cart d-md-none d-lg-inline-flex"></i>
-										<span>Make This For me</span>
+										<span class="">Add to Cart</span>
 									</button>
 								</div>
 								<div class="row mt-1">
 										<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fas fa-plus-square"></i>
-										Add to Favourite
+										Like this item
 									</button>
 									<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fa fa-globe" ></i>
@@ -603,11 +634,11 @@
 								</div>
 								<div class="row flex-column">
 									<div>
-										<span class="text-orange font-weight-bold med-text-1">N14,700</span>
-										<span class="s-thru smaller-text">N15,000</span>
+										<span class="price-span text-orange font-weight-bold med-text-1">N3,600</span>
+										<span class="s-thru smaller-text">N7,000</span>
 									</div>
-									<p class="my-1">
-										Rf Clothings Aztec Shirt No5
+									<p class="my-1 item-name">
+										Le Blue Designer Shirt
 									</p>
 									<div class="flex-column">
 											<span class="d-block little-text">			Product ID: 2016100001
@@ -617,15 +648,15 @@
 											</span>
 										</span>
 									</div>
-									<button class="btn btn-outline-secondary my-2 w-10 mx-auto smaller-text">
+									<button class="btn add-to-cart btn-outline-secondary my-2 w-10 mx-auto smaller-text">
 										<i class="fas fa-shopping-cart d-md-none d-lg-inline-flex"></i>
-										<span>Make This For me</span>
+										<span class="">Add to Cart</span>
 									</button>
 								</div>
 								<div class="row mt-1">
 										<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fas fa-plus-square"></i>
-										Add to Favourite
+										Like this item
 									</button>
 									<button class="col-12 col-lg-6 btn bg-ash border-0 btn-outline-orange little-text rounded-0">
 										<i class="fa fa-globe" ></i>
@@ -639,5 +670,6 @@
 			</section>
 		</main>
 		<script src="./js/all.min.js"></script>
+		<script src="./js/store.js"></script>
 	</body>
 </html>

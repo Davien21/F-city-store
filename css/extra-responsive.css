@@ -1,5 +1,8 @@
-.red {
+.red-bg-alt {
 	background-color: red;
+}
+.red-bg-alt {
+	background-color: #FF4834;
 }
 .blue {
 	background-color: blue;
@@ -78,6 +81,9 @@ div.fullHeight {
 }
 .text-blue-alt {
 	color: #0182C7;
+}
+.text-red-alt {
+	color: #FF4834;
 }
 .big-text {
 	font-size: 1.4em !important;
@@ -524,4 +530,19 @@ div.fullHeight {
 	 .p-def {
 	 	padding: 0px 15px;
 	 }
+}
+.btn-outline-red {
+
+}
+.btn-outline-red {
+  color: #FF4834;
+  background-color: transparent;
+  background-image: none;
+  border-color: #FF4834;
+}
+
+.btn-outline-red:hover {
+  color: #fff;
+  background-color: #FF4834;
+  border-color: #FF4834;
 }
